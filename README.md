@@ -106,5 +106,5 @@ If there is no solution, print something appropriate to stderr, and *nothing* to
 
 ## How to run it
 
-Run: `sbt "run-main com.homerquan.Main /tmp/e.txt 2:0 4:2"`
-Test: `sbt test`
+* Run: `sbt "run-main com.homerquan.Main /tmp/e.txt 2:0 4:2"`
+* Test: `sbt test`
