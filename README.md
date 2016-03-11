@@ -79,6 +79,7 @@ If there is no solution, print something appropriate to stderr, and *nothing* to
 ### Create two map
 
 1. location->elevation
+```
 (Location(5,2),List(A))
 (Location(4,1),List(B))
 (Location(2,0),List(C))
@@ -89,11 +90,21 @@ If there is no solution, print something appropriate to stderr, and *nothing* to
 (Location(4,2),List(D))
 (Location(2,1),List(A))
 (Location(1,0),List(A, D))
+```
 
 2. adjucency graph
+```
 (Location(2,1),Set(Location(5,2)))
 (Location(1,0),Set(Location(2,1), Location(1,1)))
 (Location(2,0),Set(Location(1,1)))
 (Location(1,1),Set(Location(2,2), Location(4,2)))
 (Location(4,1),Set(Location(3,2)))
 (Location(3,0),Set(Location(4,1)))
+```
+
+3. Using a graph search to find the answer (DFS, DP with tail recursive)
+
+## How to run it
+
+Run: `sbt "run-main com.homerquan.Main /tmp/e.txt 2:0 4:2"`
+Test: `sbt test`
